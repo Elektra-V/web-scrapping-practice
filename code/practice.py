@@ -26,7 +26,7 @@ def main():
         book = {
             "title": title,
             "price": unidecode(prices[i]).replace("APS", ""),
-            "image_url": images_url[i],
+            "image_url": f"http://books.toscrape.com/{images_url[i]}",
             "star_rating" : ratings[i].replace("star-rating", "").lstrip()
         }
         books.append(book)
